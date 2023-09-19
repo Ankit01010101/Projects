@@ -1,0 +1,476 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ankit Bararodia - Welcome to my profile</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&family=Roboto&display=swap"
+        rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            background-color: rgb(0, 0, 32);
+            color: white;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            height: 80px;
+            background-color: rgb(18, 18, 95);
+        }
+
+        nav ul {
+            display: flex;
+            justify-content: center;
+        }
+
+        nav ul li {
+            list-style: none;
+            margin: 0 23px;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: white;
+        }
+
+        nav ul li a:hover {
+            color: rgb(152, 152, 242);
+            font-size: 1.05rem;
+        }
+
+        .left {
+            font-size: 1.7rem;
+        }
+
+        .firstsection {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            margin: 130px 0;
+
+
+        }
+
+        .firstsection>div {
+            width: 30%;
+        }
+
+        .leftsection {
+            font-size: 3rem;
+        }
+
+        .rightsection img {
+            width: 80%;
+            /* border-bottom-left-radius: 10px;
+            border-bottom-right-radius: 10px;
+            border-top-left-radius: 10px;
+            border-top-right-radius: 10px; */
+            border-radius: 20%;
+            
+            
+        }
+
+        .purple {
+            color: rgb(130, 84, 174);
+        }
+
+        #element {
+            color: rgb(130, 84, 174);
+        }
+
+        .secondsection {
+            max-width: 80vw;
+            margin: auto;
+            height: 80vh;
+        }
+
+        .secondsection h1 {
+            font-size: 1.9rem;
+        }
+
+        .secondsection .box {
+            background: white;
+            width: 77vw;
+            height: 2px;
+            margin: 56px 0;
+            display: flex;
+        }
+
+        .secondsection .vertical {
+            height: 93px;
+            width: 1px;
+            background-color: white;
+            margin: 0 6vw;
+        }
+
+        main hr {
+            border: 0;
+            background: #9c97f1;
+            height: 0.3rem;
+            margin: 40px 84px;
+        }
+
+        .img-top {
+            width: 40px;
+            position: relative;
+            top: -45px;
+            left: -9px;
+        }
+
+        .img-in {
+            width: 40px;
+            position: relative;
+            top: -4px;
+            left: 25px;
+        }
+
+        .img-ap {
+            width: 34px;
+            position: relative;
+            top: 0px;
+            left: 14px;
+            border-radius: 0;
+            border-bottom-left-radius: 5px;
+            border-bottom-right-radius: 5px;
+            border-top-left-radius: 5x;
+            border-top-right-radius: 5px;
+            border-top-left-radius: 5px;
+        }
+        .img-insta{
+            width: 27px;
+            position: relative;
+            top: 0px;
+            left: 14px;
+            border-radius: 0;
+            border-bottom-left-radius: 5px;
+            border-bottom-right-radius: 5px;
+            border-top-left-radius: 5x;
+            border-top-right-radius: 5px;
+            border-top-left-radius: 5px;
+        }
+        .img-fb{
+            width: 27px;
+            position: relative;
+            top: 0px;
+            left: 14px;
+            border-radius: 0;
+            border-bottom-left-radius: 5px;
+            border-bottom-right-radius: 5px;
+            border-top-left-radius: 5x;
+            border-top-right-radius: 5px;
+            border-top-left-radius: 5px;
+        }
+
+        .text-gray {
+            color: gray;
+        }
+
+        .vertical-title {
+            position: relative;
+            top: 54px;
+            width: 150px;
+        }
+
+        .vertical-dese {
+            position: relative;
+            top: 65px;
+            color: grey;
+            width: 150px;
+            font-size: 9px;
+        }
+
+        footer {
+            background-color: #0e0e1a;
+            height: 300px;
+        }
+
+        .footer {
+            display: flex;
+            padding: 23px 122px;
+            justify-content: space-evenly;
+        }
+
+        .footer ul {
+            list-style: none;
+        }
+
+        .footer>div {
+            width: 223px;
+        }
+
+        footer .footer-rights {
+            text-align: center;
+            padding: 12px 0;
+            font-size: 1.05rem;
+            color: gray;
+        }
+        .contact{
+            margin-top: 275px;
+            justify-content: space-evenly;
+            
+        }
+        .contact ul{
+            list-style: none;
+        }
+
+        @media screen and (max-width: 1400px) {
+            body {
+                /*background-color: red;*/
+            }
+
+            .box {
+                flex-direction: column;
+            }
+
+            .secondsection .vertical {
+                height: unset;
+            }
+
+            .vertical-title,
+            .vertical-dese {
+                left: 45px;
+            }
+
+            .firstsection {
+                flex-direction: column-reverse;
+            }
+
+            footer {}
+
+            nav {
+                flex-direction: column;
+            }
+
+            .leftsection {
+                width: 100% !important;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+            }
+
+            .rightsection {
+                width: 72% !important;
+            }
+
+            .rightsectio img {
+                margin-left: 75px;
+            }
+
+            .secondsection {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                height: 141vh;
+            }
+
+            body {
+                min-width: fit-content;
+            }
+
+            .img-top {
+                top: 122px;
+            }
+
+            .rightsection img {
+                margin-left: 75px;
+            }
+            .contact{
+                margin-top: -380px;
+            }
+
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="left">Ankit Bararodia's profile</div>
+            <div class="right">
+                <ul>
+                    <li><a href="https://www.linkedin.com/in/ankit-bararodia-890396228"><img class="img-in"
+                                src="./linkedin-logo-png-2024.png" alt=""></a></li>
+                    <li><a href="https://github.com/Ankit01010101"><img class="img-ap"
+                                src="./main-qimg-729a22aba98d1235fdce4883accaf81e.webp" alt=""></a></li>
+                    <li><a href="https://instagram.com/theankitverma_01?igshid=YTQwZjQ0NmI0OA=="><img class="img-insta" src="./instagram-icon_1057-2227.avif" alt=""></a></li>
+                    <li><a href="https://www.facebook.com/profile.php?id=100073472439906"><img class="img-fb" src="./voronezh-russia-january-11-2020-facebook-logo-square-icon-with-shadow_444390-8973.avif" alt=""></a></li>
+
+
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="firstsection">
+            <div class="leftsection">
+                <div> Hi, My name is <span class="purple">Ankit Bararodia</span></div>
+                <div>and I am a</div>
+                <span id="element"></span>
+            </div>
+            <div class="rightsection">
+                <img src="./WhatsApp Image 2023-09-19 at 4.17.23 PM.jpeg" alt="">
+            </div>
+
+        </section>
+        <hr>
+        <section class="secondsection">
+            <span class="text-gray">What I have done so far</span>
+            <h1>Full stack Web Development</h1>
+            <div class="box">
+                <div class="vertical">
+                    <img class="img-top" src="./pngegg (1).png" alt="">
+                    <div class="vertical-title">
+                        HTML
+                    </div>
+                    <div class="vertical-dese">
+
+                    </div>
+                </div>
+
+                <div class="vertical">
+                    <img class="img-top" src="./pngegg (1).png" alt="">
+                    <div class="vertical-title">
+                        CSS&Bootstrap
+                    </div>
+                    <div class="vertical-dese">
+
+
+                    </div>
+                </div>
+
+
+                <div class="vertical">
+                    <img class="img-top" src="./pngegg (1).png" alt="">
+                    <div class="vertical-title">
+                        JavaScript
+                    </div>
+                    <div class="vertical-dese">
+
+
+                    </div>
+                </div>
+
+
+                <div class="vertical">
+                    <img class="img-top" src="./pngegg (1).png" alt="">
+                    <div class="vertical-title">
+                        DSA
+                    </div>
+                    <div class="vertical-dese">
+
+
+                    </div>
+                </div>
+
+                <div class="vertical">
+                    <img class="img-top" src="./pngegg (1).png" alt="">
+                    <div class="vertical-title">
+                        NodeJS & MongoDB
+
+                    </div>
+                    <div class="vertical-dese">
+                        
+                    </div>
+                    
+                    
+                </div>
+                <div class="vertical">
+                    <img class="img-top" src="./pngegg (1).png" alt="">
+                    <div class="vertical-title">
+                        React
+                    </div>
+                    <div class="vertical-dese">
+                        
+                        
+
+                    </div>
+                </div>
+
+            </div>
+            <div class="contact">
+                <h3>Contact</h3>
+                <br>
+                <div>
+                    <ul>
+                        <li>Mobile Number: 7737383904</li>
+                        <br>
+                        <li>Email: ankit85020@gmail.com</li>
+                        
+                    </ul>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div class="footer">
+            <div class="footer-first">
+                <h3>CERTIFICATION</h3>
+                <br>
+                <ul>
+                    <li>Edureka</li>
+                    <li>Frontend</li>
+                    <li>JS Project</li>
+                    <li>FreeCodeCamp</li>
+                    
+                </ul>
+            </div>
+            <div class="footer-second">
+                <h3>EDUCATION</h3>
+                <br>
+                <div>White Rose sec. ser. School Ganwari sikar
+                    <br>
+                    <br>
+                    B.sc  Uni-PDUSU(2016-2019)
+                </div>
+
+            </div>
+            <div class="footer-third">
+                <h3>HOBBIES</h3>
+                <br>
+                <ul>
+                    <li>Internet Suffering</li>
+                    <li>Travelling</li>
+                    <li>Cricket</li>
+                    <li>Netflix</li>
+                </ul>
+            </div>
+            <div class="footer-fourth">
+                <h3>PERSONAL INFORMATION</h3>
+                <br>
+                <div>Name: Ankit Bararodia
+                    Father name: Mr. Satya Prakash
+                    DOB: 28November1999
+                    Address: New Colony Vpo-Ganwari Neem ka Thana sikar
+                    Pincode: 332705
+                </div>
+            </div>
+        </div>
+        <div class="footer-rights">
+            www.ankitbararodiaprofile.com | All rights reserved
+            
+    </footer>
+    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+    <!-- Setup and start animation! -->
+    <script>
+        var typed = new Typed('#element', {
+            strings: ['passionate Full Stack Web Developer'],
+            typeSpeed: 50,
+        });
+    </script>
+
+</body>
+
+</html>
